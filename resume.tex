@@ -120,11 +120,14 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.3in]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-.08in}}
+\newcommand{\resumeItemListStart}{\vspace{-.06in}\begin{itemize}[leftmargin=0.3in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
 
 % ADDED COMMANDS %
+
+
+\newcommand{\resumeHeader}[1]{ \vspace{-.2in} \styledSection{\textbf{#1}}}
 
 \newcommand{\resumeProjectHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeProjectHeadingListEnd}{\end{itemize}}
@@ -146,97 +149,122 @@
   \textbf{{\Large Dustin O'Brien}} \\ \href{mailto:dustintobrien@gmail.com}{\faEnvelopeO\ \underline{dustintobrien@gmail.com}} & \href{https://www.linkedin.com/in/dustin-o-brien-7174a4267/}{\faLinkedin\ \underline{www.linkedin.com/in/dustin-o-brien/}} \\
    \faMobile\ (240) 678-3366 &
    \href{https://github.com/Omniladder}{\faGithub\ \underline{github.com/Omniladder}} \\
-   \href{https://www.dustintobrien.com}{\faGlobe\ \underline{www.dustintobrien.com}} \\
+     \href{https://www.dustintobrien.com}{\faGlobe\ \underline{www.dustintobrien.com}} & {\faMapMarker\ Derwood, MD 20855}\\
  \end{tabular*}
-
-%-----------ABOUT---------------
-
-% \section{Objective}
-% \styledSection{\textbf{Objective}}
-
-% \vspace{2pt}
-% \small{
-% Highly motivated computer science senior with a strong foundation in software engineering and a passion for solving complex problems. Seeking a challenging entry-level position to apply my technical skills, learn from experienced professionals, and contribute to the development of robust and innovative software solutions. Committed to continuous learning and eager to make a positive impact in a dynamic and collaborative environment.
-% }
-% \vspace{-5pt}
 
 %-----------------COURSES----------------%
 
     %-----------EDUCATION-----------
-    \styledSection{\textbf{Education}}
+    \vspace{.15in}
+    \resumeHeader{Education}
     \resumeSubHeadingListStart
       \resumeSubDetailheading
-        {Salisbury University}{Aug. 2021 -- May 2025}
-        {GPA: 3.59/4.0}{Salisbury, MD}
-        {B.S. in Computer Science \& Data Science, Minor in Math}{Tracks: Software Engineering \& AI/Algorithms}
+        {Salisbury University}{August 2021 -- May 2025}
+        {GPA: 3.61/4.0 $|$ Cum Laude $|$ Bachelor of Science }{Salisbury, MD}
+        {\textbf{Majors:} Computer Science, Data Science  \quad \textbf{Minor:} Math}{Tracks: Software Engineering, AI/Algorithms}
         
         
     \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
-\styledSection{\textbf{Experience}}
+\resumeHeader{Relevant Experience}
   \resumeSubHeadingListStart
 
-    
+         \resumeSubheading
+        {Math \& Computer Science Tutor}{January 2024 -- May 2025}
+        {Salisbury University $|$ C/C++, Java, Python, Bash, Javascript, PHP, MySQL}{Salisbury, MD}
+        \resumeItemListStart
+        \resumeItem{Tutored and explained complex low level Math \& Computer Science topics with up to 35\% in exam scores.}
+        \resumeItem{Debugged student, simplified codebases handling errors, logical problems, and memory leaks in a fast timely manner.}
+        \resumeItemListEnd   
 
       \resumeSubheading
-        {Artificial Intelligence Researcher}{June 2024 -- September 2024}
-        {Salisbury University $|$ Python, Langchain, FAISS, Pandas }{Salisbury, MD}
+        {Artificial Intelligence Software Intern}{June 2024 -- September 2024}
+        {Salisbury University $|$ Python, Langchain, FAISS, Docker, AWS }{Salisbury, MD}
         \resumeItemListStart
-        \resumeItem{Developed a set of LLM based applications in a collaborative environment of professors and student researchers to build LLM based chatbots and documents to explain client wants}
-        \resumeItem{Helped orchestrate and wrote papers and presentations for MIT and Salisbury's undergrad research conferences}
+        \resumeItem{Developed 2 LLM applications use in a collaborative environment to explain environmental issues in a concise way.}
+        \resumeItem{Systems include feature-rich chatbot and markdown file generator to extract client wants using transcipt RAG.}
         \resumeItemListEnd
 
         \resumeSubheading
-      {System Adminstration Intern}{May 2024 -- August 2024}
+      {System Adminstration Assistant}{May 2024 -- August 2024}
       {Salisbury University $|$ Linux, Windows, Python, Pytorch, Anaconda}{Salisbury, MD}
       \resumeItemListStart
-        \resumeItem{Worked under Salisbury's Department Chair and System Adminstrator on the creation of 4 new computer labs totaling a setup of 44 new individual computers}
-        \resumeItem{Created benchmarks for Salisbury \& UMBC High Performance Computer labs on ability to train new Large Language Models for development of experimental new courses}
+        \resumeItem{Moved, setup, and connected 44 computers across 4 new labs and assured communication with admin's foreman.}
+        \resumeItem{Created LLM based attention benchmarks using Pytorch to test HPCL computers on Salisbury and UMBC systems.}
       \resumeItemListEnd
 
-        \resumeSubheading
-        {Math \& Comp. Sci Tutor}{January 2024 -- Present}
-        {Salisbury University $|$ C/C++, Java, Python, R, Valgrind}{Salisbury, MD}
-        \resumeItemListStart
-        \resumeItem{Tutored and explained complex Mathematical \& Computer Science topics such as Calculus, Systems Software, Discrete Maths, Data Visualization, and more with up to 35\% increase in exam scores}
-        \resumeItem{Debugged student codebases handling errors, logical problems, and memory leaks in a fast timely manner}
-        \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\styledSection{\textbf{Projects}}
+\resumeHeader{Projects}
     \resumeProjectHeadingListStart
         \resumeProjectHeading
-          {\textbf{Celite} $|$ \emph{JavaScript, HTML/CSS, JQuery}}{January 2024 -- December 2024}
+          {\textbf{Chapp} $|$ \emph{Angular, Node.js, Typescript, Express.js, PostgreSQL, Docker, AWS}}{July 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{Worked in a Agile/Scrum development cycle to develope a set of efficient Celluar Automaton simulators}
-            \resumeItem{Generated visually appealing and accurate imagery to be used for new mathematical textbooks, undergraduate research, and allow for more interactive teaching of the subject}
+            \resumeItem{A gamified chatting service this project uses an Angular frontend using PrimeNG component to give a colorful UI.}
+            \resumeItem{Worked on Express.js, Typescript, \& Postgres backend for data store, account creation, user sessions, and more.}
           \resumeItemListEnd
           
         \resumeProjectHeading
-          {\textbf{Portfolio Website} $|$ \emph{React, AWS (EC2), MUI, JavaScript, Nginx}}{September 2024 -- January 2025}
+          {\textbf{TestifAI} $|$ \emph{Python, Langchain, Javascript, Jinja, AWS $|$ UMBC's Best Education, 2nd Overall}}{September 2024}
           \resumeItemListStart
-            \resumeItem{Created multi-page React website and components from scratch with visually distinctive styling}
-            \resumeItem{Built custom personal AWS EC2 server to handle hosting site along with other personal projects, websites, and APIs for external display \& usage}
+            \resumeItem{An educational test maker for students harnesses LLM technology to write questions off slides \& more.}
+            \resumeItem{Worked on web frontend creating Jinja based templates with specialized features such as modifiable text.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Lambda Check} $|$ \emph{Haskell, Python, SQLite, FastAPI, Jenkins, Docker $|$ UD's Best Financial Hack}}{February 2024}
+          \resumeItemListStart
+            \resumeItem{Built CI pipeline for Haskell that scan imported packages and source  code for known vulnerabilities.}
+            \resumeItem{Developed cabal parsing to gather packages for query backend API. Followed by creating Jenkins pipeline.}
           \resumeItemListEnd
 
     \resumeProjectHeadingListEnd
     
+
+\resumeHeader{Research Presentations}
+    \resumeProjectHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Identfying User Wants Using LLMs} $|$ \emph{MIT Undergraduate Research Conference --- D. O'Brien S. Presley et. al}}{}
+          \resumeItemListStart
+            \resumeItem{An investigation on LLM techniques to distill complex transcripts. Publish in MIT undergrad journal.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Analysis of Collision \& Contact Sports Classifications} $|$ \emph{SUSRC --- D. O'Brien, K. Tranfaglia et. al}}{}
+          \resumeItemListStart
+            \resumeItem{A ML driven research project to cluster sports as contact or collision and creation of graph visuals of findings.}
+          \resumeItemListEnd
+ 
+    \resumeProjectHeadingListEnd
+ 
+\resumeHeader{Certifications}
+    \resumeProjectHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Certified Cloud Practitoner} $|$ \emph{Amazon Web Services}}{July 2025 -- July 2028}
+
+    \resumeProjectHeadingListEnd
+ 
+
 %-----------TECHNICAL SKILLS-----------
+\begin{comment}
 \styledSection{\textbf{Technical Skills}}
     \resumeBasicListStart
         \resumeItem{\textbf{Languages}: Python, Java, C/C++, Javascript, HTML/CSS, R}
         \resumeItem{\textbf{Tools}: React, LangChain, Next.JS, Sk-Learn, Pytorch, Jinja, OpenGL}
         \resumeItem{\textbf{Softwares}: Linux, VSCode, Vim, AWS (EC2), Nginx, Git/Github}
     \resumeBasicListEnd
+\end{comment}
 
 %-----------HACKATHONS-----------
+\begin{comment}
 \styledSection{\textbf{Hackathons}}
     \resumeBasicListStart
         \resumeItem{HenHacks 2024: Won Best Bank of America's Best Financial hack with a Haskell Vulnerability Detector}
         \resumeItem{HackUMBC 2024: Won 2nd place overall and best educational software with TestifAI, an AI-powered test generator}
         \resumeItem{HoyaHacks 2025: Created a professional looking AI based Resume platform using Next.JS, Python, and LangChain}
     \resumeBasicListEnd
+\end{comment}
 
 \end{document}
